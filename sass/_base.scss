@@ -1,0 +1,19 @@
+
+@media screen and (min-width: 992px) {
+    body {
+        overflow: auto !important;
+    }
+    
+    main {
+        margin-left: $offcanvas-width;
+    }
+
+    .offcanvas-backdrop::before {
+        display: none;
+    }
+
+    .navbar .btn-navbar {
+        display: none;
+    }
+}
+

@@ -1,0 +1,40 @@
+.sidebar-nav {
+
+    width: $offcanvas-width;
+
+    & .sidebar-link {
+        display: flex;
+        align-items: center;
+
+        & .right-icon {
+            display: inline-flex;
+        }
+
+        &[aria-expanded="true"] .right-icon {
+            transform: rotate(180deg);
+        }
+    }
+
+    & .sidebar-user {
+        margin-bottom: -1rem;
+        font-size: 1.7rem;
+        padding: .5rem 0;
+        color: rgba(255, 255, 255, .55);
+        margin-left: 2rem !important;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+
+    @media screen and(min-width: 992px) {
+        
+        & {
+            transform: none;
+            visibility: visible !important;
+            height: calc(100% - 56px);
+            top: $topNavBarHeight;
+        }
+
+    }
+}

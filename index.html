@@ -7,6 +7,7 @@
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/d65ea662d5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
 
     <title>Bootstrap - Admin Dashboard</title>
 </head>
@@ -32,5 +33,142 @@
         </div>
     </nav>
     <!-- END NAVBAR -->
+
+    <!-- OFFCANVAS -->
+    <div class="offcanvas offcanvas-start sidebar-nav bg-dark" tabindex="-1" id="sidebar">
+        <div class="offcanvas-body p-0">
+            <nav class="navbar-dark">
+                <div class="dropdown">
+                    <a class="sidebar-user nav-link dropdown-toggle ms-2" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-user"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-start">
+                        <li><a class="dropdown-item" href="#">Set Status</a></li>
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+                <hr class="bg-light">
+                <ul class="navbar-nav">
+                    <li>
+                        <a href="#" class="nav-link px-3 active">
+                            <span class="me-2"><i class="fas fa-home"></i></span>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link px-3 sidebar-link" data-bs-toggle="collapse" href="#dashboards">
+                            <span class="me-2"><i class="fas fa-tachometer-alt"></i></span>
+                            <span>Dashboards</span>
+                            <span class="ms-auto">
+                                <span class="right-icon">
+                                    <i class="fas fa-chevron-down"></i>
+                                </span>
+                            </span>
+                        </a>
+                        <div class="collapse" id="dashboards">
+                            <ul class="navbar-nav ps-3">
+                                <li>
+                                    <a href="#" class="nav-link px-3">
+                                        <span>Dashboard-1</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link px-3">
+                                        <span>Dashboard-2</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="nav-link px-3 sidebar-link" data-bs-toggle="collapse" href="#orders">
+                            <span class="me-2"><i class="fas fa-paste"></i></span>
+                            <span>Orders</span>
+                            <span class="ms-auto">
+                                <span class="right-icon">
+                                    <i class="fas fa-chevron-down"></i>
+                                </span>
+                            </span>
+                        </a>
+                        <div class="collapse" id="orders">
+                            <ul class="navbar-nav ps-3">
+                                <li>
+                                    <a href="#" class="nav-link px-3">
+                                        <span>Order-1</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link px-3">
+                                        <span>Order-2</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="nav-link px-3 sidebar-link" data-bs-toggle="collapse" href="#charts">
+                            <span class="me-2"><i class="fas fa-chart-line"></i></i></span>
+                            <span>Charts</span>
+                            <span class="ms-auto">
+                                <span class="right-icon">
+                                    <i class="fas fa-chevron-down"></i>
+                                </span>
+                            </span>
+                        </a>
+                        <div class="collapse" id="charts">
+                            <ul class="navbar-nav ps-3">
+                                <li>
+                                    <a href="#" class="nav-link px-3">
+                                        <span>Chart-1</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link px-3">
+                                        <span>Chart-2</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="nav-link px-3 sidebar-link" data-bs-toggle="collapse" href="#tables">
+                            <span class="me-2"><i class="fas fa-table"></i></span>
+                            <span>Tables</span>
+                            <span class="ms-auto">
+                                <span class="right-icon">
+                                    <i class="fas fa-chevron-down"></i>
+                                </span>
+                            </span>
+                        </a>
+                        <div class="collapse" id="tables">
+                            <ul class="navbar-nav ps-3">
+                                <li>
+                                    <a href="#" class="nav-link px-3">
+                                        <span>Table-1</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link px-3">
+                                        <span>Table-2</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- END OFFCANVAS -->
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery-3.5.1.js"></script>
 </body>
 </html>
