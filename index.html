@@ -168,7 +168,47 @@
     </div>
     <!-- END OFFCANVAS -->
 
+    <!-- MAIN -->
+    <main class="mt-5 pt-3">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <h4>Dashboard</h4>
+                </div>
+            </div>
+            <!-- CHARTS -->
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <div class="card h-100">
+                        <div class="card-header">
+                            <span class="me-2"><i class="fas fa-chart-bar"></i></i></span>
+                            Bar Chart Example
+                        </div>
+                        <div class="card-body">
+                            <canvas class="chart-bar" width="400" height="200"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <div class="card h-100">
+                        <div class="card-header">
+                            <span class="me-2"><i class="fas fa-chart-line"></i></i></span>
+                            Line Chart Example
+                        </div>
+                        <div class="card-body">
+                            <canvas class="chart-line" width="400" height="200"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END CHARTS -->
+        </div>
+    </main>
+    <!-- END MAIN -->
+
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.2/dist/chart.min.js"></script>
     <script src="./js/jquery-3.5.1.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
