@@ -1,3 +1,13 @@
+.page-link {
+    color: #000;
+    font-weight: bold;
+}
+
+.page-item.active .page-link {
+    background: #333;
+    border-color: #333;
+    color: #fff;
+}
 
 @media screen and (min-width: 992px) {
     body {
