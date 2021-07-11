@@ -700,6 +700,19 @@
             </div>
             <!-- END TABLE -->
         </div>
+
+        <!-- FOOTER -->
+        <footer class="bg-dark text-white py-3 text-center">
+            <div>
+                <p>&copy; 
+                    <span class="year"></span>
+                    <a href="https://startbootstrap.com/previews/sb-admin" target="_blank" class="text-white">
+                        startbootstrap.com
+                    </a>
+                </p>
+            </div>
+        </footer>
+        <!-- END FOOTER -->
     </main>
     <!-- END MAIN -->
 
@@ -709,5 +722,9 @@
     <script src="./js/jquery.dataTables.min.js"></script>
     <script src="./js/dataTables.bootstrap5.min.js"></script>
     <script src="./js/script.js"></script>
+
+    <script>
+        $('.year').html(new Date().getFullYear());
+    </script>
 </body>
 </html>
